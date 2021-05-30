@@ -1,10 +1,5 @@
 // USER VARIABLES SECTION
-$accent: orange; // Accent Color
-$fontsize: 16px; // Body Font Size
-$textcolor: #333; // Text Color
-$lineheight: 1.65; // Document Line Height
-$userfont: roboto-oh5, sans-serif; // User Font Family
-$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 30px;
@@ -27,12 +22,37 @@ $gutter: $grid-gutter-width;
 	src: url($furl) format('woff2');
 }
 }
+//Примерно, так как у каждого шрифта свои значения...
+// 100 – Thin || Hairline
+// 200 – Extra Light || Ultra Light || Thin
+// 300 – Light
+// 400 – Normal || Regular
+// 500 – Medium
+// 600 – Semi Bold || Demi Bold
+// 700 – Bold
+// 800 – Extra Bold || Ultra Bold || Heavy
+// 900 – Black || Heavy
 
 
 @include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2');
 @include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2');
 @include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2');
 @include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2');
+
+@include font('Montserrat-Black', normal, 900, '../fonts/Montserrat/Montserrat-Black.ttf');
+
+@include font('Montserrat-Bold', normal, 700, '../fonts/Montserrat/Montserrat-Bold.ttf');
+
+@include font('Montserrat-Light', normal, 300, '../fonts/Montserrat/Montserrat-Light.ttf');
+
+@include font('Montserrat-Medium', normal, 500, '../fonts/Montserrat/Montserrat-Medium.ttf');
+
+@include font('Montserrat-Regular', normal, 400, '../fonts/Montserrat/Montserrat-Regular.ttf');
+
+@include font('Montserrat-SemiBold', normal, 600, '../fonts/Montserrat/Montserrat-SemiBold.ttf');
+
+@include font('Comfortaa-Regular', normal, 400, '../fonts/Comfortaa-Regular.ttf');
+
 
 // GENERAL DOCUMENT STYLES
 
@@ -42,8 +62,6 @@ $gutter: $grid-gutter-width;
 }
 
 ::selection{
-	
-	background-color: $accent;
 	color: #fff;
 }
 
@@ -63,12 +81,3 @@ input, textarea
 }
 
 
-body{
-	font-family: $userfont;
-	font-size: $fontsize;
-	line-height: $lineheight;
-	color: $textcolor;
-	min-width: 320px;
-	position: relative;
-	overflow-x: hidden;
-}
