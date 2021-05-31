@@ -11,3 +11,17 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Custom JS
 
 })
+
+let Myhamburger = document.getElementById("Myhamburger");
+console.log(Myhamburger);
+
+Myhamburger.addEventListener("click" , ()=>{
+	if (Myhamburger.classList.contains('is-active')){
+		Myhamburger.classList.remove("is-active");
+	}
+	else{
+		Myhamburger.classList.add("is-active");
+	}
+	
+})
+
