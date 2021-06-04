@@ -15,20 +15,68 @@ body{
 	position: relative;
 	overflow-x: hidden;
 }
+ul{
+	margin:0px;
+}
+li{
+	list-style: none;
+	
+}
+a{
+	text-decoration: none;
+	color: $textcolor;
+}
+.container{
+	max-width: 1304px;
+	margin: 0 auto;
+}
 
 // <!-- ***************MAIN SECTION*************** -->
 // <!-- *********Navigation/Навигация********* -->
 .main-section{
 	background-color: #FECC00;
 	#Myhamburger{display: none;}
-
-	.main-navigation{
+	height: 100vh;
+	background-image: url("../images/src/Rectangle2.png");
+	background-repeat: no-repeat;
+	background-position-x: right;
+	
+}
+.main-navigation{
+	#nav-menu{
+		display: flex;
+		align-items: flex-end;
+	}
+	.menu-item{
+		margin: 0px 24px;
+		font-size: 18px;
+		font-family: Montserrat-Medium;
+	}
+}
+.main-section_logo{
+	a{
+		color: $textcolor;
+		font-size: 30px;
+		font-family: Montserrat-SemiBold;
+		text-transform: uppercase;
+		line-height: 0px;
 		
 	}
 	
-
-
-
+}
+.nav-wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top: 62px;
+}
+.main-section_tel{
+	font-family: Montserrat-SemiBold;
+	font-size: 24px;
+	text-decoration: underline;
+	
+	
+	
 }
 
 
