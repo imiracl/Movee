@@ -30,6 +30,9 @@ a{
 	max-width: 1304px;
 	margin: 0 auto;
 }
+.d-flex{
+	display: flex;
+}
 
 // <!-- ***************MAIN SECTION*************** -->
 // <!-- *********Navigation/Навигация********* -->
@@ -37,7 +40,7 @@ a{
 	background-color: #FECC00;
 	#Myhamburger{display: none;}
 	height: 100vh;
-	background-image: url("../images/src/Rectangle2.png");
+	//background-image: url("../images/src/Rectangle2.png");
 	background-repeat: no-repeat;
 	background-position-x: right;
 	
@@ -78,11 +81,112 @@ a{
 	
 	
 }
-
-
-
-
 // <!-- *********/END Navigation/Навигация********* -->
-// <!-- *********/END Navigation/Навигация********* -->
+.main-section_why-us_truck{
+	max-width: 150px;
+	margin-right: 43px;
+}
+.main-section_why-us_triggerTwo {
+	max-width: 140px;
+	margin-right: 26px;
+}
+.main-section_why-us_money{
+	max-width: 188px;
+}
+.main-section_why-us {
+	p{
+		padding: 0 9px;
+		margin: 0px;
+		line-height: 21px;
+		font-family: Montserrat-Medium;
+	}
+}
+.orden-btn__red{
+	padding: 11px 95px;
+	background-color:#FF352B;
+	border: 0px;
+	color:#F2F2F2;
+	font-size: 24px;
+	font-family: Montserrat-SemiBold;
+	z-index: 10;
+
+}
+.main-section-title{
+	.main-section-title_left-block{
+		max-width: 545px;
+		margin-top: 74px;
+		h1{
+			font-size: 70px;
+			font-family: Montserrat-Bold;
+			line-height: 1;
+		}
+		.in-Moscow{
+			font-family: Montserrat-SemiBold;
+			font-size: 30px;
+			line-height: 37px;
+			margin-top: 15px;
+			margin-bottom: 47px;
+		}
+	}
+}
+.orden-btn-wrapper{
+	display: inline-block;
+	position: relative;
+	z-index: 109;
+	&:before{
+		position: absolute;
+		content: "";
+		border: 2px solid #F2F2F2;
+		top: 10px;
+		left: 10px;
+		width: 304px;
+		height: 60px;
+		z-index: -2;
+		
+
+	}
+}
+.main-section_why-us{
+	margin-top: 71px;
+}
+.call_me_wrapp{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background: url("../images/src/svg/phone.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color:rgba(61, 155, 233, 0.8);
+	position: relative;
+	
+	z-index: 2;
+	&:before{
+		content: "";
+		width: 136px;
+		height: 136px;
+		background: rgba(61, 155, 233, 0.3);
+		border-radius: 50%;
+		position: absolute;
+		top:-18px;
+		left:-18px;
+		right:0;
+		bottom:0;
+		z-index: -1;
+		cursor: pointer;
+		box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+		animation: pulse 2s infinite;
+		
+	}
+}
+.phone-icon{
+	display: block;
+      margin: 0 auto; 
+}
+
+
+
+
+
+
 
 @import "media";
