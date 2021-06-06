@@ -16,10 +16,6 @@
 // ≥768px
 @include media-breakpoint-down(md) {
 	
-}
-
-// ≥576px
-@include media-breakpoint-down(sm) {
 	#nav-menu{
 		position: fixed;
 		top: 0;
@@ -28,30 +24,53 @@
 		bottom: 0;
 		width: 100%;
 		height: 100vh;
-		background: rgb(88, 29, 29);
+		background: #FECC00;
 		color: white;
 		transform: translateY(-100%);
 		transition: transform 0.2s;
 		list-style: none;
 		padding-top: 4rem;
 		left:-100%;
+		z-index: 200 !important;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center !important;
+		li{
+			margin: 20px 0px;
+		}
+
+		a{
+			font-weight: bold;
+			font-size: 24px;
+			
+		}
 	}
 	.is-active{
 		transform: translateY(0) !important;
+		z-index: 200;
+
+
 		
 		
 		
 	}
 	.open-menu{
 		left: 0 !important;
+		z-index: 200;
 	}
 	
 	#Myhamburger{
 		display: block !important;
 		position: fixed;
 		right: 0;
-		z-index: 101;
+		z-index: 201 !important;
 	}
+
+}
+
+// ≥576px
+@include media-breakpoint-down(sm) {
+
 	
 }
 
@@ -76,4 +95,10 @@
 // ≤1200px
 @include media-breakpoint-up(xl) {
 	
+}
+
+@media (max-width: 1300px) {
+	.container{
+		padding: 0 20px;
+	}
 }

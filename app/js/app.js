@@ -15,19 +15,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let Myhamburger = document.getElementById("Myhamburger");
 let nav_menu = document.getElementById("nav-menu");
-console.log(Myhamburger);
+let body = document.getElementById("boody");
+console.log(body);
 
 Myhamburger.addEventListener("click" , ()=>{
 	if (Myhamburger.classList.contains('is-active')){
 		Myhamburger.classList.remove("is-active");
 		nav_menu.classList.remove("is-active");
 		nav_menu.classList.remove("open-menu");
+		body.classList.remove("hide_scroll");
 
 	}
 	else{
 		Myhamburger.classList.add("is-active");
 		nav_menu.classList.add("is-active");
 		nav_menu.classList.add("open-menu");
+		body.classList.add("hide_scroll");
+		
 	}
 	
 })
