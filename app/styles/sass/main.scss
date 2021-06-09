@@ -82,7 +82,7 @@ a{
 	align-items: flex-end;
 	padding-top: 62px;
 }
-.main-section_tel{
+.main-section__tel{
 	font-family: Montserrat-SemiBold;
 	font-size: 24px;
 	text-decoration: underline;
@@ -141,6 +141,10 @@ a{
 	display: flex;
 //	justify-content: space-between;
 }
+.orden-btn{
+	cursor: pointer;
+}
+
 .orden-btn-wrapper{
 	display: inline-block;
 	position: relative;
@@ -210,6 +214,42 @@ a{
 	
 }
 
+
+// <!-- *********Как это происходит?/Happen?********* -->
+.happen__block{
+	max-width: 1093px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.happen__list{
+	flex: 0 0 45%;
+	
+	
+}
+.list_text{
+	max-width: 380px;	
+}
+.happen__tittle{
+	font-size: 30px;
+	font-family: "Montserrat-SemiBold";
+	text-align: center;
+}
+.happen{
+	&__list{
+		display: flex;
+	}
+}
+.list_number{
+	font-size: 50px;
+	font-family: "Montserrat-Light";
+	text-shadow: 1px 1px 1px #FED100;
+	margin-right: 47px;
+	display: flex;
+  line-height: 50px;
+
+}
 
 
 
