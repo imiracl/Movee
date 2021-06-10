@@ -164,6 +164,11 @@ a{
 }
 .main-section_why-us{
 	margin-top: 71px;
+	display: flex;
+	
+}
+.why-us_icons{
+	display: flex;
 }
 .call_me_wrapp{
 	border-radius: 50%;
@@ -209,6 +214,7 @@ a{
 		left: 78px;
 		margin-top: 57px;
 		z-index: 1;
+		
 	}
 	margin-top: -30px;
 	
@@ -225,16 +231,22 @@ a{
 }
 .happen__list{
 	flex: 0 0 45%;
-	
+	margin-bottom: 30px;
 	
 }
 .list_text{
 	max-width: 380px;	
+	h3{
+		font-size: 20px;
+		font-family: Montserrat-Medium;
+	}
 }
 .happen__tittle{
 	font-size: 30px;
 	font-family: "Montserrat-SemiBold";
 	text-align: center;
+	margin-top: 95px;
+	margin-bottom: 58px;
 }
 .happen{
 	&__list{
@@ -245,7 +257,7 @@ a{
 	font-size: 50px;
 	font-family: "Montserrat-Light";
 	text-shadow: 1px 1px 1px #FED100;
-	margin-right: 47px;
+	margin-right: 40px;
 	display: flex;
   line-height: 50px;
 
