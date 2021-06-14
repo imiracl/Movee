@@ -68,6 +68,25 @@
 		right: 0;
 		z-index: 201 !important;
 	}
+	
+		.nav-wrapper{
+		position: fixed;
+		top: -40px;
+		left: 0px;
+		z-index: 200;
+		padding-left: 20px;
+		display: block;
+		background-color: #FECC00;
+		width: 100%;
+		
+
+	}
+	.main-section__tel{
+		display: none;
+	}
+	.main-section-title{
+		padding-top: 30px;
+	}
 
 }
 
