@@ -7,7 +7,28 @@
 @include media-breakpoint-down(xl) {
 	
 }
-
+//≥1100px
+@media (max-width: 1100px) {
+	.call_me{
+		position: absolute;
+		right: 20px;
+	}
+	
+		.main-section-title_left-block{
+			h1{
+				font-size: 50px;
+			}
+		}
+		.main-section_why-us{
+			flex-wrap: wrap;
+		}
+		
+	
+	.why-us_icons{
+		margin-top: 10px;
+	}
+	
+}
 // ≥992px
 @include media-breakpoint-down(lg) {
 	.happen__list{
@@ -95,9 +116,75 @@
 	.happen__list{
 		margin-bottom: 5px;
 	}
+	.main-section_why-us,.call_me {
+		display: none;
+	}
 	
-}
+	.main-section-title{
+		position: relative;
+	}
+	.main-section-title_left-block{
+		margin-top: 35px;
+		width: 100%;
+		h1{
+			font-size: 28px;
+			text-align: center;
+			line-height: 126.9%;
+			margin-bottom: 0px;
+		}
+		.in-Moscow{
+			font-size: 18px;
+			text-align: center;
+			margin-bottom: 0px;
+			margin-top: 0px;
+		}
+	}
+	.main-section-title{
+		flex-wrap: wrap;
+		
+	}
+	.main-section-title_right-block__deliveryman{
+		width: 248px;
+		position: inherit;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 80px;
+	}
 
+	.main-section{
+		background-image: none;
+	}
+	.orden-btn-wrapper{
+		
+		position: absolute;
+		bottom: 40px;
+		&:before{
+			display: none;
+		}
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		
+	}
+	.main-section_logo{
+		a{
+			font-size: 16px;
+		}
+	}
+	.happen__tittle{
+		font-size: 20px;
+		margin-top: 30px;
+	}
+	.happen__block{
+		p{display: none;}
+		h3{font-size: 16px;}
+		padding-left: 20px;
+	}
+	.happen__list{
+		justify-content: start;
+		margin-bottom: 30px;
+	}
+}
 
 /*==========  Mobile First  ==========*/
 
@@ -128,24 +215,3 @@
 
 }
 
-@media (max-width: 1100px) {
-	.call_me{
-		position: absolute;
-		right: 20px;
-	}
-	.main-section-title{
-		.main-section-title_left-block{
-			h1{
-				font-size: 50px;
-			}
-		}
-		.main-section_why-us{
-			flex-wrap: wrap;
-		}
-		
-	}
-	.why-us_icons{
-		margin-top: 10px;
-	}
-	
-}

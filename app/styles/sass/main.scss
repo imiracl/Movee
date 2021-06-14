@@ -123,6 +123,8 @@ a{
 }
 
 .main-section-title{
+	display: flex;
+}
 	.main-section-title_left-block{
 		max-width: 545px;
 		margin-top: 74px;
@@ -139,9 +141,9 @@ a{
 			margin-bottom: 47px;
 		}
 	}
-	display: flex;
+	
 //	justify-content: space-between;
-}
+
 .orden-btn{
 	cursor: pointer;
 }
