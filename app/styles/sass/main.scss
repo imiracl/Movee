@@ -146,6 +146,16 @@ a{
 
 .orden-btn{
 	cursor: pointer;
+	border: 0px;
+	z-index: 10;
+	&__accent{
+		background-color:$accent;
+		font-size: 20px;
+		color: $textcolor;
+		padding: 9px 78px;
+		font-family: Montserrat-Medium;
+		display: inline-block;
+	}
 }
 
 .orden-btn-wrapper{
@@ -266,8 +276,55 @@ a{
 
 }
 
+.price{
+	padding-top: 32px;
+	min-height: 900px;
+	&_h2{
+		font-size: 30px;
+		font-family: Montserrat-SemiBold;
+		line-height: 37px;
+		text-align: center;
+	}
+	&_h3{
+		font-size: 24px;
+		font-family: Montserrat-SemiBold;
+		line-height: 29px;
+		text-align: center;
+		margin-bottom: 64px;
+	}
+	&-card{
+		width: 420px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid #EBEBEB;
+		padding-top: 83px;
+		padding-bottom:79px;
+	}
+	&__money{
+		margin-top: 35px;
+		margin-bottom: 53px;
+	}
+}
+.price-card{
+	h3{
+		font-family: Montserrat-SemiBold;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 58px;
+	}
+	p{
+		margin-bottom: 25px;
+	}
+}
 
-
+.card__active{
+	border: 1px solid #FED100;
+}
+.price-cards{
+	display: flex;
+	justify-content: space-between;
+}
 
 
 
