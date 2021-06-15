@@ -35,11 +35,27 @@
 		flex: 0 0 100%;
 		justify-content: center;
 	}
+	.main-section-title_right-block__deliveryman{
+		left: 0px;
+		
+		
+	}
+
 }
 
 // ≥768px
 @include media-breakpoint-down(md) {
-	
+	.main-section-title_left-block{
+		h1{
+			font-size: 30px;
+		}
+		.in-Moscow{
+			font-size: 24px;
+		}
+		.orden-btn-wrapper{
+		
+		}
+	}
 	#nav-menu{
 		position: fixed;
 		top: 0;
@@ -107,6 +123,13 @@
 	}
 	.main-section-title{
 		padding-top: 30px;
+	}
+	.main-section-title_right-block__deliveryman{
+		left: 0px;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		
 	}
 
 }
@@ -183,6 +206,9 @@
 	.happen__list{
 		justify-content: start;
 		margin-bottom: 30px;
+	}
+	.orden-btn__red{
+		font-size: 20px;
 	}
 }
 
