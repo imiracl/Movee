@@ -424,11 +424,12 @@ p.link {
 } 
 
 .swiper-container {
-  width: 1220px ;
+  width: 1000px ;
 	height: 100%;
 }
 .swiper-slide{
 	display: flex;
+	justify-content: space-around;
 }
 
 @import "media";
