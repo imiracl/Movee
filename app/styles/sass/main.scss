@@ -293,7 +293,7 @@ a{
 		margin-bottom: 64px;
 	}
 	&-card{
-		width: 420px;
+		width: 32%;// 420px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -324,8 +324,109 @@ a{
 .price-cards{
 	display: flex;
 	justify-content: space-between;
+	
+}
+#all__prices__hide{
+	margin-top: 20px;
+	border-bottom: 1px solid black;
+	
+	
 }
 
 
 
+
+// <!-- *********Автопарк Car Pool********* -->
+.tabcontent{
+	display: none;
+}
+
+
+
+
+body {
+  
+  font-family: Lato;
+  
+  
+}
+
+.tabs {
+  width: 650px;  
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left;
+  li {
+    float: left;
+    display: block;
+  }
+  input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+  }
+  label {
+    display: block;
+    padding: 14px 21px;
+    border-radius: 2px 2px 0 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+ 
+    cursor: pointer;
+    position: relative;
+    top: 4px; 
+   
+    &:hover {
+      
+    }
+  }
+  .tab-content{
+    z-index: 2;
+    display: none; 
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px;  
+    position: absolute;
+    top: 53px;
+    left: 0; 
+  
+  }
+  //The Magic
+  [id^="tab"]:checked + label { 
+    top: 0;
+    padding-top: 17px; 
+   
+  }
+  [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+  }
+}
+p.link {
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0 5px;
+
+    
+    &:hover {
+      
+    }
+  }
+} 
+
+
+
 @import "media";
+
+.main-section,.price , .happen{
+	display: none;
+}
