@@ -352,7 +352,7 @@ body {
 }
 
 .tabs {
-  width: 650px;  
+  width: auto;  
   float: none;
   list-style: none;
   position: relative;
@@ -423,7 +423,13 @@ p.link {
   }
 } 
 
-
+.swiper-container {
+  width: 1220px ;
+	height: 100%;
+}
+.swiper-slide{
+	display: flex;
+}
 
 @import "media";
 
