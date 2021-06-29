@@ -1,14 +1,17 @@
 <section class="carpool">
   <div class="carpool-wrapper">
     <div class="container">
-      <h2>Автопарк</h2>
-      <h3>10 видов автомобилей от 800 кг до 10 тонн</h3>
+      <div class="carpool-title">
+        <h2>Автопарк</h2>
+        <h3>10 видов автомобилей от 800 кг до 10 тонн</h3>
+      </div>
+      
 
   
       <ul class="tabs" role="tablist">
         <li>
             <input type="radio" name="tabs" id="tab1" checked />
-            <label for="tab1" 
+            <label class="tab-label" for="tab1" 
                    role="tab" 
                    aria-selected="true" 
                    aria-controls="panel1" 
@@ -52,8 +55,9 @@
   
 
   <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+
+  <div class="swiper-btn-prev"></div>
+  <div class="swiper-btn-next"></div>
 
   <!-- If we need scrollbar -->
   
@@ -66,7 +70,9 @@
       
         <li>
             <input type="radio" name="tabs" id="tab2" />
-            <label for="tab2"
+            <label 
+            class="tab-label"
+            for="tab2"
                    role="tab" 
                    aria-selected="false" 
                    aria-controls="panel2" 
@@ -83,7 +89,9 @@
 
         <li>
           <input type="radio" name="tabs" id="tab3" />
-          <label for="tab3"
+          <label 
+          class="tab-label"
+          for="tab3"
                  role="tab" 
                  aria-selected="false" 
                  aria-controls="panel2" 
