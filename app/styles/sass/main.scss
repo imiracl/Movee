@@ -341,16 +341,6 @@ a{
 	display: none;
 }
 
-
-
-
-body {
-  
-  font-family: Lato;
-  
-  
-}
-
 .tabs {
 	
   width: auto;  
@@ -372,15 +362,20 @@ body {
   }
   label {
     display: block;
-    padding: 14px 21px;
+    padding: 7px 0px;
+		width: 201px;
+		
+		text-align: center;
     border-radius: 2px 2px 0 0;
     font-size: 20px;
     font-weight: normal;
-    text-transform: uppercase;
- 
+    font-family: Montserrat-Medium;
+		border: 1px solid #EBEBEB;
+		margin: 0 11px;
     cursor: pointer;
     position: relative;
-    top: 4px; 
+    
+	
    
     &:hover {
       
@@ -402,12 +397,15 @@ body {
   //The Magic
   [id^="tab"]:checked + label { 
     top: 0;
-    padding-top: 17px; 
+    
    
   }
   [id^="tab"]:checked ~ [id^="tab-content"] {
     display: block;
   }
+	.tab-active{
+		border: 1px solid #960000;
+	}
 }
 p.link {
 
@@ -459,13 +457,21 @@ p.link {
 .carpool-title{
 	h2{
 		text-align: center;
+		font-family: Montserrat-SemiBold;
+		font-size: 30px;
+		
 
 	}
 	h3{
 		text-align: center;
+		font-family: Montserrat-SemiBold;
+		font-size: 24px;
+		line-height: 37px;
 	}
 }
-
+.tab-active{
+	
+}
 @import "media";
 
 .main-section,.price , .happen{

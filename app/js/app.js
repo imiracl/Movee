@@ -71,3 +71,17 @@ const swiper = new Swiper('.swiper-container', {
  
 });
 
+let tablabel = document.getElementsByClassName("tab-label");
+
+function ListTable() {
+  for (let i = 0 ; i < tablabel.length; i++){
+    tablabel[i].addEventListener("click" , ()=>{
+      for (j of tablabel){
+        j.classList.remove("tab-active");
+      }
+      tablabel[i].classList.add("tab-active");
+    })
+  }
+}
+ListTable();
+
