@@ -278,7 +278,7 @@ a{
 
 .price{
 	padding-top: 32px;
-	min-height: 900px;
+	
 	&_h2{
 		font-size: 30px;
 		font-family: Montserrat-SemiBold;
@@ -347,7 +347,7 @@ a{
   float: none;
   list-style: none;
   position: relative;
-  margin: 80px 0 0 10px;
+  margin: 60px 0 0 10px;
   text-align: left;
 	display: flex;
 	justify-content: center;
@@ -425,7 +425,7 @@ p.link {
 } 
 
 .swiper-container {
-  width: 1038px ;
+  width: 1069px ;
 	height: 100%;
 	
 }
@@ -439,7 +439,7 @@ p.link {
   display: inline-block;
   padding: 6px;
 	position: absolute;
-	top: 50%;
+	top: 44%;
 	margin-top: -11px;
 	cursor: pointer;
 	z-index: 10;
@@ -453,7 +453,9 @@ p.link {
 	left: 5px;
 	
 }
-
+.carpool{
+	margin-top: 100px;
+}
 .carpool-title{
 	h2{
 		text-align: center;
@@ -472,8 +474,38 @@ p.link {
 .tab-active{
 	
 }
+.swiper-container{
+	margin-top: 50px;
+}
+.slide_title{
+	h3{
+		margin-top: 14px;
+		margin-bottom: 35px;
+	}
+	p{
+		line-height: 31px;
+	
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 9px;
+			height: 17px;
+			margin: 0px 15px 0px 0px;
+			border: solid #333333;
+			border-width: 0 3px 3px 0;
+			transform: rotate( 45deg);
+			
+		}
+	}
+}
+.order-btn__slider{
+	margin-top: 15px;
+}
+.container{
+//	background-color: tomato;
+}
 @import "media";
 
 .main-section,.price , .happen{
-	display: none;
+//	display: none;
 }
