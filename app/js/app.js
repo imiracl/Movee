@@ -8,8 +8,37 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   // Custom JS
-  //	$('#nav-menu').toggleClass('isactive');
+  //$('#nav-menu').toggleClass('isactive');
+  const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+   
+    loop: true,
+    observer: true,
+    observeParents: true,
+    freeMode: true,
+    // If we need pagination
+    
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-btn-next',
+      prevEl: '.swiper-btn-prev',
+    },
+  
+  });
+  
+  
 });
+//swiper reload
+
+
+
+
+
+
+
+
+
 
 let Myhamburger = document.getElementById("Myhamburger");
 let nav_menu = document.getElementById("nav-menu");
@@ -53,24 +82,19 @@ allPrices.addEventListener("click", () => {
 
 // SWIPER SLIDER
 
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
- 
-  loop: true,
-  observer: true,
-  observeParents: true,
-  // If we need pagination
-  
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-btn-next',
-    prevEl: '.swiper-btn-prev',
-  },
 
-  // And if we need scrollbar
- 
-});
+
+let tab = document.getElementsByClassName("tab-label");
+for (j of tab){
+  j.addEventListener("click",()=>{
+    
+    swiper.update(true);
+    console.log("done");
+   
+
+  })
+}
 
 let tablabel = document.getElementsByClassName("tab-label");
 

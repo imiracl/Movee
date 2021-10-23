@@ -73,10 +73,47 @@
 
         <li>
           <input type="radio" name="tabs" id="tab3" />
-          <label class="tab-label" for="tab3" role="tab" aria-selected="false" aria-controls="panel2"
+          <label data-toggle="tab" class="tab-label" for="tab3" role="tab" aria-selected="false" aria-controls="panel2"
             tabindex="0">Грузовики</label>
           <div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="specification" aria-hidden="true">
-            <p>Грузовики Lorem ipsum dolor sit amet.</p>
+                        <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="slide_title">
+
+                    <h3>Газель 3 метра</h3>
+                    <p>Ширана 2 м</p>
+                    <p>Высота 2 м</p>
+                    <p>Объем 16м <sup>3</sup></p>
+                    <p>Грузоподъёмность 1.5 т</p>
+
+                    <div class="orden-btn orden-btn__accent order-btn__slider">
+                      <a class="" href="#">Заказать </a>
+                    </div>
+
+                  </div>
+
+                  <img src="images/src/slide_car.png" alt="slide car">
+
+
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+
+              </div>
+              <!-- If we need pagination -->
+
+
+              <!-- If we need navigation buttons -->
+
+              <div class="swiper-btn-prev"></div>
+              <div class="swiper-btn-next"></div>
+
+              <!-- If we need scrollbar -->
+
+            </div>
           </div>
         </li>
       </ul>
