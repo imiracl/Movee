@@ -504,6 +504,28 @@ p.link {
 .container{
 //	background-color: tomato;
 }
+#contents div {
+	border: 1px black dotted;
+	display: none; //hides all div elements
+}
+
+#contents div:target {
+	display: block; //shows the selected div (target)
+}
+
+.tabs-contents{
+	div{
+		display: none;
+
+		&:target{
+			display: block;
+		}
+	}
+
+
+}
+
+
 @import "media";
 
 .main-section,.price , .happen{
