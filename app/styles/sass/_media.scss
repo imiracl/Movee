@@ -1,303 +1,383 @@
 @import "vars";
 
-
 /*==========  Desktop First  ==========*/
 
 // ≥1200px
 @include media-breakpoint-down(xl) {
-	
+  .swiper-slide {
+    // justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .cars {
+    width: 100%;
+    height: auto;
+  }
 }
 //≥1100px
 @media (max-width: 1100px) {
-	.call_me{
-		position: absolute;
-		right: 20px;
-	}
-	
-		.main-section-title_left-block{
-			h1{
-				font-size: 50px;
-			}
-		}
-		.main-section_why-us{
-			flex-wrap: wrap;
-		}
-		
-	
-	.why-us_icons{
-		margin-top: 10px;
-	}
-	
+  .call_me {
+    position: absolute;
+    right: 20px;
+  }
+
+  .main-section-title_left-block {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  .main-section_why-us {
+    flex-wrap: wrap;
+  }
+
+  .why-us_icons {
+    margin-top: 10px;
+  }
 }
 // ≥992px
 @include media-breakpoint-down(lg) {
-	.happen__list{
-		flex: 0 0 100%;
-		justify-content: center;
-	}
-	.main-section-title_right-block__deliveryman{
-		left: 0px;
-		
-		
-	}
-	.price-cards{
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
+  .happen__list {
+    flex: 0 0 100%;
+    justify-content: center;
+  }
+  .main-section-title_right-block__deliveryman {
+    left: 0px;
+  }
+  .price-cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-	.price-card{
-		flex-wrap: wrap;
-		width: 40%;
-		&:last-child{
-			margin-top: 30px;
-		}
-		
-	}
+  .price-card {
+    flex-wrap: wrap;
+    width: 40%;
+    &:last-child {
+      margin-top: 30px;
+    }
+  }
 
+  .feedback__thefeedback {
+    padding: 0 10px;
+  }
 }
 
 // ≥768px
 @include media-breakpoint-down(md) {
-	.main-section-title_left-block{
-		h1{
-			font-size: 30px;
-		}
-		.in-Moscow{
-			font-size: 24px;
-		}
-		.orden-btn-wrapper{
-		
-		}
-	}
-	#nav-menu{
-		position: fixed;
-		top: 0;
-		left:0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		height: 100vh;
-		background: #FECC00;
-		color: white;
-		transform: translateY(-100%);
-		transition: transform 0.2s;
-		list-style: none;
-		padding-top: 4rem;
-		left:-100%;
-		z-index: 200 !important;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center !important;
-		li{
-			margin: 20px 0px;
-		}
+  .main-section-title_left-block {
+    h1 {
+      font-size: 30px;
+    }
+    .in-Moscow {
+      font-size: 24px;
+    }
+    .orden-btn-wrapper {
+    }
+  }
+  #nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fecc00;
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    list-style: none;
+    padding-top: 4rem;
+    left: -100%;
+    z-index: 200 !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center !important;
+    li {
+      margin: 20px 0px;
+    }
 
-		a{
-			font-weight: bold;
-			font-size: 24px;
-			
-		}
-	}
-	.is-active{
-		transform: translateY(0) !important;
-		z-index: 200;
+    a {
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+  .is-active {
+    transform: translateY(0) !important;
+    z-index: 200;
+  }
+  .open-menu {
+    left: 0 !important;
+    z-index: 200;
+  }
 
+  #Myhamburger {
+    display: block !important;
+    position: fixed;
+    right: 0;
+    z-index: 201 !important;
+  }
 
-		
-		
-		
-	}
-	.open-menu{
-		left: 0 !important;
-		z-index: 200;
-	}
-	
-	#Myhamburger{
-		display: block !important;
-		position: fixed;
-		right: 0;
-		z-index: 201 !important;
-	}
-	
-		.nav-wrapper{
-		position: fixed;
-		top: -40px;
-		left: 0px;
-		z-index: 200;
-		padding-left: 20px;
-		display: block;
-		background-color: #FECC00;
-		width: 100%;
-		
+  .nav-wrapper {
+    position: fixed;
+    top: -40px;
+    left: 0px;
+    z-index: 200;
+    padding-left: 20px;
+    display: block;
+    background-color: #fecc00;
+    width: 100%;
+  }
+  .main-section__tel {
+    display: none;
+  }
+  .main-section-title {
+    padding-top: 30px;
+  }
+  .main-section-title_right-block__deliveryman {
+    left: 0px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 
-	}
-	.main-section__tel{
-		display: none;
-	}
-	.main-section-title{
-		padding-top: 30px;
-	}
-	.main-section-title_right-block__deliveryman{
-		left: 0px;
-		width: 100%;
-		height: auto;
-		object-fit: cover;
-		
-	}
+  .price-cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-	.price-cards{
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
-
-	.price-card{
-		flex-wrap: wrap;
-		width: 100%;
-		margin-top: 10px;
-		margin-right: 40px;
-		margin-left: 40px;
-		
-	}
-
+  .price-card {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .tabs {
+    h3 {
+      text-align: center;
+    }
+    margin: 0px;
+    padding: 0px;
+    margin-top: 15px;
+    justify-content: space-between;
+    label {
+      font-size: 16px;
+      border: none;
+      width: auto;
+      padding: 0px;
+    }
+    .tab-active {
+      border: none;
+      border-bottom: 1px solid #fed100;
+    }
+  }
+  .carpool {
+    margin-top: 10px;
+  }
+  .feedback__olga {
+    display: none;
+  }
+  .feedback__text {
+    justify-content: space-around;
+  }
+  .feedback__thefeedback {
+    flex: 0 0 50%;
+  }
+  .feedback-title {
+    padding-top: 10px;
+  }
+  .feedback-name_title {
+    margin-top: 15px;
+  }
+  .feedback__allfeedback-wrapper {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 // ≥576px
 @include media-breakpoint-down(sm) {
-	.price{
-		.container{
-			padding: 0px;
-			background-color: #F8FBFF;
-		}
-	}
-	.price__money{margin-top: 10px;}
-	.price_h2{font-size: 20px; padding-top: 15px;}
-	.price_h3{display: none;}
-	.price-card{
-		padding-bottom: 20px;
-		padding-top: 15px;
-		flex-wrap: wrap;
-		width: 100%;
-		margin-top: 10px;
-		margin-right: 0px;
-		margin-left: 0px;
-		border: none;
-		
-		h3{
-			font-size: 20px;
-			margin-bottom: 30px;
-		}
-	
-		
-	}
-	.card_hidden{
-		display: none;
-	}
-	.happen__list{
-		margin-bottom: 5px;
-	}
-	.main-section_why-us,.call_me {
-		display: none;
-	}
-	
-	.main-section-title{
-		position: relative;
-	}
-	.main-section-title_left-block{
-		margin-top: 35px;
-		width: 100%;
-		h1{
-			font-size: 28px;
-			text-align: center;
-			line-height: 126.9%;
-			margin-bottom: 0px;
-		}
-		.in-Moscow{
-			font-size: 18px;
-			text-align: center;
-			margin-bottom: 0px;
-			margin-top: 0px;
-		}
-	}
-	.main-section-title{
-		flex-wrap: wrap;
-		
-	}
-	.main-section-title_right-block__deliveryman{
-		width: 248px;
-		position: inherit;
-		margin: 0 auto;
-		margin-top: 30px;
-		margin-bottom: 80px;
-	}
+  .price {
+    .container {
+      padding: 0px;
+      background-color: #f8fbff;
+    }
+  }
+  .price__money {
+    margin-top: 10px;
+  }
+  .price_h2 {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+  .price_h3 {
+    display: none;
+  }
+  .price-card {
+    padding-bottom: 20px;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border: none;
 
-	.main-section{
-		background-image: none;
-	}
-	.orden-btn-wrapper{
-		
-		position: absolute;
-		bottom: 40px;
-		&:before{
-			display: none;
-		}
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		
-	}
-	.main-section_logo{
-		a{
-			font-size: 16px;
-		}
-	}
-	.happen__tittle{
-		font-size: 20px;
-		margin-top: 30px;
-	}
-	.happen__block{
-		p{display: none;}
-		h3{font-size: 16px;}
-		padding-left: 20px;
-	}
-	.happen__list{
-		justify-content: start;
-		margin-bottom: 30px;
-	}
-	.orden-btn__red{
-		font-size: 20px;
-	}
+    h3 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  .card_hidden {
+    display: none;
+  }
+  .happen__list {
+    margin-bottom: 5px;
+  }
+  .main-section_why-us,
+  .call_me {
+    display: none;
+  }
+
+  .main-section-title {
+    position: relative;
+  }
+  .main-section-title_left-block {
+    margin-top: 35px;
+    width: 100%;
+    h1 {
+      font-size: 28px;
+      text-align: center;
+      line-height: 126.9%;
+      margin-bottom: 0px;
+    }
+    .in-Moscow {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+  }
+  .main-section-title {
+    flex-wrap: wrap;
+  }
+  .main-section-title_right-block__deliveryman {
+    width: 248px;
+    position: inherit;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+
+  .main-section {
+    background-image: none;
+  }
+  .orden-btn-wrapper {
+    position: absolute;
+    bottom: 40px;
+    &:before {
+      display: none;
+    }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-section_logo {
+    a {
+      font-size: 16px;
+    }
+  }
+  .happen__tittle {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .happen__block {
+    p {
+      display: none;
+    }
+    h3 {
+      font-size: 16px;
+    }
+    padding-left: 20px;
+  }
+  .happen__list {
+    justify-content: start;
+    margin-bottom: 30px;
+  }
+  .orden-btn__red {
+    font-size: 20px;
+  }
+  .tabs {
+    .tab-content {
+      padding: 0px;
+    }
+  }
+  .carpool-title {
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      display: none;
+    }
+  }
+  .feedback__thefeedback {
+    flex: 0 0 100%;
+  }
+  .feedback__irina {
+    display: none;
+  }
+  .map_adress {
+    position: initial;
+  }
+  .adress__social {
+    justify-content: flex-start;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    a {
+      text-align: center;
+    }
+  }
+  .footer__logo {
+    text-align: center;
+  }
+  .footer__policy,
+  .footer__agreement {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer__social{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
 }
 
 /*==========  Mobile First  ==========*/
 
 // ≤576px
 @include media-breakpoint-up(sm) {
-#all__prices__hide{
-	display: none;
-	
-}
-
+  #all__prices__hide {
+    display: none;
+  }
 }
 
 // ≤768px
 @include media-breakpoint-up(md) {
-
 }
 
 // ≤992px
 @include media-breakpoint-up(lg) {
-
 }
 
 // ≤1200px
 @include media-breakpoint-up(xl) {
-	
 }
 
 @media (max-width: 1300px) {
-	.container{
-		padding: 0 20px;
-	}
-
+  .container {
+    padding: 0 20px;
+  }
 }
-

@@ -9,13 +9,32 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Custom JS
   //$('#nav-menu').toggleClass('isactive');
+  
+
+  // function SwiperRefresh() {
+  //   let tabs = document.getElementsByClassName("tabs");
+  //   for ( tab of tabs){
+  //     tab.addEventListener("click" , ()=>{
+        
+  //       initSwiper();
+  //     })
+  //   }
+  // }
+ 
+  
+  
+});
+
+//swiper reload
+function initSwiper(){
   const swiper = new Swiper('.swiper-container', {
     // Optional parameters
    
     loop: true,
     observer: true,
     observeParents: true,
-    freeMode: true,
+    
+
     // If we need pagination
     
   
@@ -27,10 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   });
   
-  
-});
-//swiper reload
-
+}
 
 
 
@@ -85,16 +101,16 @@ allPrices.addEventListener("click", () => {
 
 
 
-let tab = document.getElementsByClassName("tab-label");
-for (j of tab){
-  j.addEventListener("click",()=>{
+// let tab = document.getElementsByClassName("tab-label");
+// for (j of tab){
+//   j.addEventListener("click",()=>{
     
-    swiper.update(true);
-    console.log("done");
+//     swiper.update(true);
+//     console.log("done");
    
 
-  })
-}
+//   })
+// }
 
 let tablabel = document.getElementsByClassName("tab-label");
 
@@ -103,10 +119,14 @@ function ListTable() {
     tablabel[i].addEventListener("click" , ()=>{
       for (j of tablabel){
         j.classList.remove("tab-active");
+        
       }
       tablabel[i].classList.add("tab-active");
+      initSwiper();
+     
     })
   }
 }
 ListTable();
+initSwiper();
 
