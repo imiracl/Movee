@@ -10,7 +10,15 @@ $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Fon
   overflow: hidden !important;
   height: 100vh !important;
 }
+a {
+  &:hover {
+    color: black;
+    transition: all 0.1s ease-out;
+    font-weight: bold;
+    text-decoration: underline;
 
+  }
+}
 body {
   font-family: Montserrat-Regular;
   font-size: $fontsize;
@@ -422,7 +430,7 @@ p.link {
 }
 .carpool {
   margin-top: 100px;
-  min-height: 710px;
+  
 }
 .carpool-title {
   h2 {
@@ -490,6 +498,7 @@ p.link {
 // <!-- *********FEEDBACK SECTION /ОТЗЫВЫ ********* -->
 .feedback-section {
   background-color: $accent;
+  margin-top: 30px;
 }
 .feedback-title {
   font-weight: 600;
@@ -554,6 +563,7 @@ p.link {
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 115px;
+  padding: 0 15px;
 }
 .order-title__rightnow {
   h2 {
@@ -675,16 +685,17 @@ p.link {
   padding-top: 100px;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: -10px;
 }
 .footer__movee {
   max-width: 220px;
 }
 .footer__logo {
-    color: $textcolor;
-    font-size: 30px;
-    font-family: Montserrat-SemiBold;
-    text-transform: uppercase;
-    line-height: 0px;
+  color: $textcolor;
+  font-size: 30px;
+  font-family: Montserrat-SemiBold;
+  text-transform: uppercase;
+  line-height: 0px;
   margin-bottom: 50px;
   margin-top: 7px;
 }
@@ -726,13 +737,50 @@ p.link {
 
 @import "media";
 
-.main-section,
-.price,
-.happen,
+// .main-section,
+// .price,
+// .happen,
 // .carpool,
-.feedback-section,
-.order-section,
-.carpool,
-.map {
+// .feedback-section,
+// .order-section,
+// .carpool,
+// .map {
+//   display: none;
+// }
+
+
+
+
+.b-tab {
   display: none;
+  font-weight: normal;
+  position: relative;
+
+  
+}
+
+.b-tab.active {
+  display: block;
+  height:auto;
+}
+
+.b-nav-tab {
+  display: block;
+  padding: 7px 0px;
+  width: 201px;
+
+  text-align: center;
+  border-radius: 2px 2px 0 0;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: Montserrat-Medium;
+  border: 1px solid #ebebeb;
+  margin: 0 11px;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.b-nav-tab.active {
+  border: 1px solid #fed100;
 }

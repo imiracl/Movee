@@ -6,150 +6,131 @@
         <h3>10 видов автомобилей от 800 кг до 10 тонн</h3>
       </div>
 
-
-
-      <ul class="tabs" role="tablist">
+      <ul class="tabs">
         <li>
-          <input type="radio" name="tabs" id="tab1" checked />
-          <label class="tab-label" for="tab1" role="tab" aria-selected="true" aria-controls="panel1"
-            tabindex="0">Газели</label>
-          <div id="tab-content1" class="tab-content" role="tabpanel" aria-labelledby="description" aria-hidden="false">
-            <p>
-
-              <!-- Slider main container -->
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="slide_title">
-
-                    <h3>Газель 3 метра</h3>
-                    <p>Ширана 2 м</p>
-                    <p>Высота 2 м</p>
-                    <p>Объем 16м <sup>3</sup></p>
-                    <p>Грузоподъёмность 1.5 т</p>
-
-                    <div class="orden-btn orden-btn__accent order-btn__slider">
-                      <a class="" href="#">Заказать </a>
-                    </div>
-
-                  </div>
-
-                  <img class="cars" src="images/src/slide_car.png" alt="slide car">
-
-
-                </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-
-              </div>
-              <!-- If we need pagination -->
-
-
-              <!-- If we need navigation buttons -->
-
-              <div class="swiper-btn-prev"></div>
-              <div class="swiper-btn-next"></div>
-
-              <!-- If we need scrollbar -->
-
-            </div>
-
-
-            </p>
-          </div>
+          <a href="#tab_1" data-tab="tab_1" class="b-nav-tab active">
+            Газели
+          </a>
         </li>
-
         <li>
-          <input type="radio" name="tabs" id="tab2" />
-          <label class="tab-label" for="tab2" role="tab" aria-selected="false" aria-controls="panel2"
-            tabindex="0">Каблуки</label>
-          <div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="specification" aria-hidden="true">
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="slide_title">
-
-                    <h3>Каблук 5 метра</h3>
-                    <p>Ширана 4 м</p>
-                    <p>Высота 5 м</p>
-                    <p>Объем 20м <sup>3</sup></p>
-                    <p>Грузоподъёмность 2 т</p>
-
-                    <div class="orden-btn orden-btn__accent order-btn__slider">
-                      <a class="" href="#">Заказать </a>
-                    </div>
-
-                  </div>
-
-                  <img class="cars" src="images/src/slide_car2.png" alt="slide car">
-
-
-                </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-
-              </div>
-              <!-- If we need pagination -->
-
-
-              <!-- If we need navigation buttons -->
-
-              <div class="swiper-btn-prev"></div>
-              <div class="swiper-btn-next"></div>
-
-              <!-- If we need scrollbar -->
-
-            </div>
-          </div>
+          <a href="#tab_2" data-tab="tab_2" class="b-nav-tab"> Каблуки </a>
         </li>
-
-
         <li>
-          <input type="radio" name="tabs" id="tab3" />
-          <label data-toggle="tab" class="tab-label" for="tab3" role="tab" aria-selected="false" aria-controls="panel2"
-            tabindex="0">Грузовики</label>
-          <div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="specification" aria-hidden="true">
-                        <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="slide_title">
-                    <h3>Грузовик 10 метра</h3>
-                    <p>Ширана 5 м</p>
-                    <p>Высота 5 м</p>
-                    <p>Объем 25м <sup>3</sup></p>
-                    <p>Грузоподъёмность 2.5 т</p>
-                  <div class="orden-btn orden-btn__accent order-btn__slider">
-                      <a class="" href="#">Заказать </a>
-                    </div>
-
-                  </div>
-
-                  <img class="cars" src="images/src/slide_car3.png" alt="slide car">
-
-
-                </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-
-              </div>
-              <!-- If we need pagination -->
-              <!-- If we need navigation buttons -->
-
-              <div class="swiper-btn-prev"></div>
-              <div class="swiper-btn-next"></div>
-              <!-- If we need scrollbar -->
-
-            </div>
-          </div>
+          <a href="#tab_3" data-tab="tab_3" class="b-nav-tab"> Грузовики </a>
         </li>
       </ul>
+
+      <div id="tab_1" class="b-tab active">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide_title">
+                <h3>Газель 3 метра</h3>
+                <p>Ширана 2 м</p>
+                <p>Высота 2 м</p>
+                <p>Объем 16м <sup>3</sup></p>
+                <p>Грузоподъёмность 1.5 т</p>
+
+                <div class="orden-btn orden-btn__accent order-btn__slider">
+                  <a class="" href="#">Заказать </a>
+                </div>
+              </div>
+
+              <img
+                class="cars"
+                src="images/src/slide_car.png"
+                alt="slide car"
+              />
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <!-- If we need pagination -->
+
+          <!-- If we need navigation buttons -->
+
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-next"></div>
+
+          <!-- If we need scrollbar -->
+        </div>
+      </div>
+      <div id="tab_2" class="b-tab">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide_title">
+                <h3>Каблук 5 метра</h3>
+                <p>Ширана 4 м</p>
+                <p>Высота 5 м</p>
+                <p>Объем 20м <sup>3</sup></p>
+                <p>Грузоподъёмность 2 т</p>
+
+                <div class="orden-btn orden-btn__accent order-btn__slider">
+                  <a class="" href="#">Заказать </a>
+                </div>
+              </div>
+
+              <img
+                class="cars"
+                src="images/src/slide_car2.png"
+                alt="slide car"
+              />
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <!-- If we need pagination -->
+
+          <!-- If we need navigation buttons -->
+
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-next"></div>
+
+          <!-- If we need scrollbar -->
+        </div>
+      </div>
+      <div id="tab_3" class="b-tab">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide_title">
+                <h3>Каблук 8 метра</h3>
+                <p>Ширана 7 м</p>
+                <p>Высота 8 м</p>
+                <p>Объем 30м <sup>3</sup></p>
+                <p>Грузоподъёмность 2 т</p>
+
+                <div class="orden-btn orden-btn__accent order-btn__slider">
+                  <a class="" href="#">Заказать </a>
+                </div>
+              </div>
+
+              <img
+                class="cars"
+                src="images/src/slide_car3.png"
+                alt="slide car"
+              />
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <!-- If we need pagination -->
+
+          <!-- If we need navigation buttons -->
+
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-next"></div>
+
+          <!-- If we need scrollbar -->
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
