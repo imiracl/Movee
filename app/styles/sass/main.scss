@@ -144,8 +144,6 @@ a {
   }
 }
 
-//	justify-content: space-between;
-
 .orden-btn {
   cursor: pointer;
   border: 0px;
@@ -324,9 +322,7 @@ a {
 }
 
 // <!-- *********Автопарк Car Pool********* -->
-.tabcontent {
-  display: none;
-}
+
 
 .tabs {
   width: auto;
@@ -340,51 +336,11 @@ a {
   li {
     display: block;
   }
-  input[type="radio"] {
-    position: absolute;
-    top: 0;
-    left: -9999px;
-  }
-  label {
-    display: block;
-    padding: 7px 0px;
-    width: 201px;
-
-    text-align: center;
-    border-radius: 2px 2px 0 0;
-    font-size: 20px;
-    font-weight: normal;
-    font-family: Montserrat-Medium;
-    border: 1px solid #ebebeb;
-    margin: 0 11px;
-    cursor: pointer;
-    position: relative;
-
-    &:hover {
-    }
-  }
-  .tab-content {
-    z-index: 2;
-    display: none;
-    overflow: hidden;
-    width: 100%;
-    font-size: 17px;
-    line-height: 25px;
-    padding: 25px;
-    position: absolute;
-    top: 53px;
-    left: 0;
-  }
+ 
   //The Magic
-  [id^="tab"]:checked + label {
-    top: 0;
-  }
-  [id^="tab"]:checked ~ [id^="tab-content"] {
-    display: block;
-  }
-  .tab-active {
-    border: 1px solid #fed100;
-  }
+ 
+
+
 }
 p.link {
   a {
@@ -476,24 +432,9 @@ p.link {
 .container {
   //	background-color: tomato;
 }
-#contents div {
-  border: 1px black dotted;
-  display: none; //hides all div elements
-}
 
-#contents div:target {
-  display: block; //shows the selected div (target)
-}
 
-.tabs-contents {
-  div {
-    display: none;
 
-    &:target {
-      display: block;
-    }
-  }
-}
 
 // <!-- *********FEEDBACK SECTION /ОТЗЫВЫ ********* -->
 .feedback-section {
@@ -734,23 +675,6 @@ p.link {
   margin-bottom: 7px;
 }
 // <!-- *********/END FOOTER SECTION / ФУТЕР ********* -->
-
-@import "media";
-
-// .main-section,
-// .price,
-// .happen,
-// .carpool,
-// .feedback-section,
-// .order-section,
-// .carpool,
-// .map {
-//   display: none;
-// }
-
-
-
-
 .b-tab {
   display: none;
   font-weight: normal;
@@ -784,3 +708,20 @@ p.link {
 .b-nav-tab.active {
   border: 1px solid #fed100;
 }
+
+@import "media";
+
+// .main-section,
+// .price,
+// .happen,
+// .carpool,
+// .feedback-section,
+// .order-section,
+// .carpool,
+// .map {
+//   display: none;
+// }
+
+
+
+
